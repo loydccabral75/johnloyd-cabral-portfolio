@@ -1,12 +1,17 @@
-// main.js - JavaScript functionality
+// List of Naruto's projects
+const projects = [
+    "Shadow Clone Technique Website",
+    "Rasengan Animation Demo",
+    "Hidden Leaf Village Map App",
+    "Ninja Academy Learning Platform"
+];
 
-// Simple DOM Manipulation Example (Change background color on button click)
-document.addEventListener('DOMContentLoaded', function() {
-    const changeBgButton = document.createElement('button');
-    changeBgButton.textContent = 'Change Background Color';
-    document.body.appendChild(changeBgButton);
+const projectList = document.getElementById('project-list');
 
-    changeBgButton.addEventListener('click', function() {
-        document.body.style.backgroundColor = '#ffcccb'; // Change to light pink
-    });
+// Render each project as list item
+projects.forEach(project => {
+    const li = document.createElement('li');
+    li.textContent = project;
+    projectList.appendChild(li);
 });
+
