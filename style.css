@@ -1,86 +1,89 @@
-/* Basic Reset */
-* {
-    box-sizing: border-box;
+/* Basic reset and body styling */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fff8e1;
+    background-color: #f9f9f9;
     color: #333;
-    line-height: 1.6;
-    padding: 20px;
 }
 
+/* Header styling */
 header {
-    background-color: #ff6f00;
+    background-color: #ff9800;
     color: white;
     padding: 20px 0;
     text-align: center;
 }
 
-header nav ul {
+header h1 {
+    margin: 0;
+}
+
+nav ul {
     list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    gap: 20px;
 }
 
-header nav ul li {
-    margin: 0 15px;
-}
-
-header nav ul li a {
+nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease;
 }
 
-header nav ul li a:hover {
-    color: #ffe0b2;
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
+/* Main content styling */
 main {
     max-width: 900px;
     margin: 30px auto;
+    padding: 0 20px;
 }
 
-#about {
-    text-align: center;
-    margin-bottom: 40px;
+section {
+    margin-bottom: 50px;
 }
 
-#naruto-pic {
-    width: 200px;
-    border-radius: 50%;
-    border: 5px solid #ff6f00;
+/* About section */
+#about img {
+    display: block;
+    max-width: 250px;  /* Smaller size but still visible */
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
     margin-bottom: 15px;
 }
 
-h1, h2 {
-    margin-bottom: 15px;
-}
-
+/* Project list styling */
 #project-list {
-    list-style: none;
-    padding-left: 0;
+    list-style-type: none;
+    padding: 0;
 }
 
 #project-list li {
-    background-color: #ffe0b2;
-    border: 1px solid #ffb74d;
-    margin-bottom: 12px;
-    padding: 12px;
-    border-radius: 6px;
-    font-weight: 600;
+    background-color: #fff3e0;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
 
+/* Contact section */
+#contact p {
+    font-size: 1.1rem;
+}
+
+/* Footer styling */
 footer {
     text-align: center;
-    padding: 20px 0;
-    margin-top: 50px;
-    border-top: 1px solid #ddd;
-    color: #666;
+    padding: 15px 0;
+    background-color: #ff9800;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
