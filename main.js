@@ -1,9 +1,9 @@
 // List of Naruto's projects
-const projects = [
-    "Shadow Clone Technique Website",
-    "Rasengan Animation Demo",
-    "Hidden Leaf Village Map App",
-    "Ninja Academy Learning Platform"
+const hobby = [
+    "coding",
+    "basketball",
+    "dancing",
+    "watching anime",
 ];
 
 const projectList = document.getElementById('project-list');
